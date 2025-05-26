@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afreen's Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="https://images.meesho.com/images/products/455159932/zndvd_1200.jpg" alt="Product Image" id="productImg">
+                <div class="control">
+                    <span class="prev active"></span>
+                    <span class="prev"></span>
+                    <span class="prev"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Sweatshirt</h1>
+                <h2>Price: ₹999</h2>
+                <h3>10% OFF</h3>
+                <p>
+                    Sweatshirt for women in a trendy design, perfect for casual outings and comfortable wear. Made from high-quality fabric, it ensures warmth and style. Available in multiple sizes and colors to suit your preference. 
+                    <span class="rating">4.5</span>
+                    <span class="reviews">(1000+ reviews)</span> 
+                </p>
+                <form>
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" id="small" name="size">
+                            <span>S</span>
+                        </label>
+                         <label for="medium">
+                            <input type="radio" id="medium" name="size">
+                            <span>M</span>
+                        </label>
+                         <label for="large">
+                            <input type="radio" id="large" name="size">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" id="x-large" name="size">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" id="xx-large" name="size">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="black">
+                            <input type="radio" id="black" name="color">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="maroon">
+                            <input type="radio" id="maroon" name="color">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="sea green">
+                            <input type="radio" id="sea green" name="color">
+                            <span class="color-3"></span>
+                        </label>
+                    </div>
+                    <div class="quantity-select">
+                        <p>Quantity</p>
+                        <input type="number" name="quantity" value="1">
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let productImg = document.getElementById("productImg");
+        let prev = document.getElementsByClassName("prev");
+
+        prev[0].onclick = function(){
+            productImg.src ="https://images.meesho.com/images/products/455159932/zndvd_1200.jpg";
+        }
+        prev[1].onclick = function(){
+            productImg.src ="https://images.meesho.com/images/products/460388239/e1qmg_1200.jpg";
+        }
+        prev[2].onclick = function(){
+            productImg.src ="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTrZ5UiqBocL27UAXpEzgy9-S_hSiL4HKbHcMB70gF1NOn7yLCV7mpcHiwq_PDfWFCqz5OmwsKaWxFLOXR4Y-CjTQ0mVKk4eA";
+        }
+   </script>
+</body>
+</html>
+
